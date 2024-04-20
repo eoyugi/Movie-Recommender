@@ -1,7 +1,5 @@
 ### Optimized Movie Recommendation System README
 
-![Movie Recommendation System](images/movie_recommendation_system.png)
-
 This repository hosts a movie recommendation system implemented in Python, utilizing pandas for data handling and scikit-learn for machine learning functionalities such as CountVectorizer and cosine similarity computation.
 
 #### Objective
