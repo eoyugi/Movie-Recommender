@@ -1,0 +1,11 @@
+{
+    "image": "python:3.9", // Docker image with Python 3.9
+    "extensions": [
+        "ms-python.python", // Python extension for Visual Studio Code
+        "ms-python.vscode-pylance" // Pylance extension for Python in VS Code
+    ],
+    "postCreateCommand": "pip install -r requirements.txt", // Command to install Python libraries
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash" // Set default shell to bash
+    }
+}
