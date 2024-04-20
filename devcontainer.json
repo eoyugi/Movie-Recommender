@@ -4,8 +4,13 @@
         "ms-python.python", // Python extension for Visual Studio Code
         "ms-python.vscode-pylance" // Pylance extension for Python in VS Code
     ],
-    "postCreateCommand": "pip install -r requirements.txt", // Command to install Python libraries
+    "postCreateCommand": "pip install pandas scikit-learn flask", // Install required Python libraries
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash" // Set default shell to bash
-    }
+    },
+    "dockerComposeFile": ["docker-compose.yml"], // Specify Docker Compose file
+    "service": "app", // Specify the service name in the Docker Compose file
+    "workspaceFolder": "/workspace", // Set the workspace folder path
+    "runArgs": ["-v", "some-volume:/workspace"], // Mount a volume for persistent storage
+    "remoteUser": "vscode" // Set the user for VS Code server
 }
